@@ -1,0 +1,269 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: black;
+}
+/* mobile */
+
+/* navbar css */
+.navbar-brand{
+    font-size: x-large;
+    animation: light;
+    animation-duration: 1s;
+    animation-delay: 1s;
+}
+.nav-link{
+    font-size: larger;
+}
+header{
+    margin-bottom: 20px !important;
+}
+/* navbar css */
+
+/* hero */
+.hero{
+    margin-bottom: 5%;
+}
+.hero-img img{
+    height: 341px;
+    width: 98%;
+}
+.hero-text{
+    color: aliceblue;
+}
+.hero-text h1{
+    font-size: 37px;
+    margin: 0px 0px 2px 0px !important;
+    font-family: 'Bricolage Grotesque', sans-serif !important;
+}
+.hero-text h3{
+    color: #b30000;
+    font-size: small;
+}
+.hero-text h6{
+    margin-bottom: 0px !important;
+}
+.hero-img{
+    border: solid #b30000;
+    background-color: #b30000;
+}
+/* hero */
+
+/* about */
+
+.about h1{
+    font-size: 30px;
+    color: azure;
+}
+.about p{
+    color:#ffe6e9;
+    font-size: 17px;
+}
+/* about end */
+
+/* projcts */
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.container .mycard{
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #b30000;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5);
+    transition: 0.4s ease-in-out;
+}
+.container .mycard:hover{
+    height: 370px;
+}
+.container .mycard .cimg{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 8px;
+    z-index: 1;
+    box-shadow: 0 3px 50px rgba(0, 0, 0, 0.5);
+
+}
+.container .mycard .cimg img{
+    max-width: 100%;
+    height: 100%;
+    border-radius: 6px;
+}
+.container .mycard .cdetail{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #ffe6e9;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+
+}
+.container .mycard:hover .cdetail{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -50px;
+}
+.projects{
+    font-size: 30px;
+}
+.container .mycard .cdetail a{
+    text-decoration: none;
+    color: #ffe6e9;
+}
+/* projects end */
+
+/* contact */
+#contact{
+    background-color: #b30000;
+}
+.contact{
+    margin-left: 5%;
+    font-size: 30px;
+}
+.contact2{
+    font-size: large;
+    margin-left: 5%;
+}
+.contact2 a{
+    text-decoration: none;
+    color: black;
+}
+
+/* contact end*/
+/* mobile end */
+  
+
+/* tablet */
+@media(min-width: 550px){
+    /* navbar css */
+    .navbar-brand{
+        font-size: xx-large;
+    }
+    .nav-link{
+        font-size: x-large;
+    }
+    /* navbar css */
+
+    /* hero */
+    .hero{
+        display:flex;
+    }
+    .hero-img{
+        flex-basis: 40%;
+    }
+    .hero-text{
+        flex-basis: 60%;
+        padding: 100px 0px 0px 80px;
+    }
+    /* hero */
+
+    /* about */
+    .about{
+        padding: 0 2% 0 2%;
+    }
+    .about h1{
+        font-size: 35px;
+    }
+    .about p{
+        font-size: 20px;
+    }
+    /* about end */
+
+
+    /* projects */
+    .projects{
+        font-size: 35px;
+    }
+    /* projects end */
+}
+/* tablet end */
+
+
+/* laptop */
+@media (min-width: 800px){
+    /* navbar css */
+    .navbar-brand{
+        font-size: 40px;
+    }
+    /* navbar css */
+    /* hero */
+    .hero-img img{
+        height: 400px;
+        width: 80%;
+        margin-left: 20%;
+    }
+    .hero-text{
+        padding:150px 0px 0px 130px;
+    }
+    .hero-text h6{
+        font-size: 30px;
+    }
+    .hero-text h1{
+        font-size: 70px;
+    }
+    .hero-text h3{
+        font-size: 15px;
+    }
+    /* hero */
+
+    /* about */
+
+    .about h1{
+    font-size: 50px;
+    }
+    .about p{
+    font-size: 30px;
+    line-height: 60px;
+    }
+    .about{
+        padding: 0 3% 0 3%;
+    }
+    /* about end */
+
+    /* projects */
+    .projects{
+        font-size: 50px;
+    }
+    /* projects end */
+}
+/* laptop end */
+
+
+/* big screen */
+@media (min-width: 1200px) {
+    /* hero */
+    .hero-text{
+        padding: 150px 0px 0px 250px;
+    }
+    .hero-img img{
+        height: 500px;
+    }
+    /* hero end */
+}
+/* big screen end */
